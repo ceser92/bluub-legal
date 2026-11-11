@@ -188,3 +188,11 @@ footer.site-footer a { color: var(--ink-soft); }
   }
   article h2 { color: #9fd0ff; }
 }
+
+/* TR/EN dil bağlantısı (tools/build.py) */
+.lang-switch {
+  margin-left: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.85;
+}
