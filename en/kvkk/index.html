@@ -213,7 +213,7 @@
 <p>deleted, destroyed, or anonymized.</p>
 <p>The retention periods applied by data type are as follows:</p>
 <p>Account data → for as long as the account is active; after a deletion request, for the period for withdrawing the deletion request (see Section 18), followed by permanent deletion by the daily clean-up job. Limited records that must be kept by law are excluded.</p>
-<p>Manually taken encrypted database backups → no more than 7 days. Automatic backups of the hosting provider (Supabase) are deleted automatically at the end of the provider's backup cycle.</p>
+<p>Encrypted database and file backups → no more than 7 days. Backups are kept, encrypted, only on a computer under the operator's control and, optionally, in the operator's cloud storage account. The hosting plan used does not include automatic database backups by the provider (Supabase).</p>
 <p>Deleted Bottles → removal following the technical deletion/backup period.</p>
 <p>Security records → the limited period required for security and legal requests.</p>
 <p>Provider access logs → Our hosting and network providers (Supabase, Cloudflare) keep access logs, which may include IP addresses, for their own retention periods for the security of the service. BluuB's own application tables do not store raw IP addresses; the authentication service may keep IP addresses in sign-in and session records for session security.</p>
