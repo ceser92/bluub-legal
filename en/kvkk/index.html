@@ -14,7 +14,7 @@
     <a class="lang-switch" href="../../kvkk/" lang="tr">Türkçe</a></div>
   <div class="page-title">
     <h1>KVKK Privacy Notice</h1>
-    <div class="meta">Last Updated: 06.11.2026</div>
+    <div class="meta">Last Updated: 11.11.2026</div>
   </div>
 </header>
 <main>
@@ -22,7 +22,7 @@
 <h2>1. Data Controller</h2>
 <p>With respect to your personal data processed within the scope of the use of the BluuB mobile application ("BluuB", the "App", or the "Platform"), the data controller under Law No. 6698 on the Protection of Personal Data ("KVKK") is Caner Eser, who operates BluuB as a natural person (an individual). BluuB is not operated by a company or any other legal entity.</p>
 <p>Data Controller (natural person): Caner Eser</p>
-<p>E-mail: bluubapp@gmail.com</p>
+<p>E-mail: <a href="mailto:bluubapp@gmail.com">bluubapp@gmail.com</a></p>
 <p>This Disclosure Notice has been prepared to inform you about which personal data BluuB processes, for which purposes and on which legal grounds, to whom this data may be transferred, by which methods it is collected, and your rights under the KVKK.</p>
 <h2>2. Which Personal Data May We Process?</h2>
 <p>Depending on the features of BluuB that you use, the following personal data may be processed.</p>
@@ -69,6 +69,7 @@
 <p>However, the purpose of BluuB's core voice-sharing feature is not to detect or verify the User's biometric identity.</p>
 <p>Audio recordings will not be used by BluuB for the purpose of voice biometrics, face/voice matching, or uniquely verifying a person's identity, unless such a feature is separately and explicitly developed and the necessary legal processes are completed.</p>
 <p>Audio recordings are processed primarily for the purpose of presenting the User's created content to other users and operating the Platform's features.</p>
+<p>We recommend that you do not share special categories of personal data, such as information about your health, sex life, religion or political opinions, in your Bottles or messages. If you choose to share such information, it is processed only for the sharing you chose (playing it to other users), for review before publication and for reviewing reports; BluuB does not separately extract or classify it or use it to build a profile about you.</p>
 <p>Audio recordings are not analysed to build a profile of the User's health, emotional state or mood. However, for community safety, Bottles submitted for publication are not shown to other users until they are approved, and authorised moderators listen to and review them against the Community Guidelines. For this review, Bottle audio is not sent to any automated speech-to-text or content classification service. The review includes paying attention to urgent risk statements such as self-harm; this is used only for the moderation decision and, where needed, to point to support resources. Profile photos may be checked automatically with the OpenAI (USA) moderation service to assist the moderator's review. The review outcome is stored as the moderation record.</p>
 <p>If the User uses the AI voice option, the recording is first converted into text: on Android by the on-device Vosk model (downloaded from alphacephei.com on first use), on iOS by Apple's speech recognition service (on the device where supported, otherwise on Apple's servers). The text the User approves is spoken by the text-to-speech engine on the device. AI voice generation is available to Premium members; to count allowances, the time and outcome of each attempt are recorded on the server, and the text and recording are not sent to the server for this count.</p>
 <h2>6. Messages and Interactions Between Users</h2>
@@ -197,7 +198,7 @@
 <p>Analytics and error tracking services</p>
 <p>To track app errors, in the release version and when Firebase is configured, the necessary technical data is shared automatically with Firebase Crashlytics (Google); no user identifier is added and parts of error messages that may be personal are removed.</p>
 <p>AI and moderation service provider</p>
-<p>OpenAI (USA), for the automated safety check of profile photos. Bottle audio is not transferred to OpenAI for the review before publication.</p>
+<p>OpenAI (USA), for the automated safety check of profile photos when this check is enabled. Bottle audio is not transferred to OpenAI for the review before publication.</p>
 <p>Network and security service provider</p>
 <p>Cloudflare, for the network layer through which server requests pass and related security services.</p>
 <p>Competent public authorities</p>
@@ -205,15 +206,17 @@
 <p>Your personal data is not sold to third parties randomly or without limitation.</p>
 <h2>16. Transfer of Personal Data Abroad</h2>
 <p>The systems of some of the technology providers used by BluuB (e.g., Supabase, Google, Apple, OpenAI, Cloudflare) are located outside Turkey; for this reason, your personal data may be transferred abroad. Under Article 9 of the KVKK, a transfer of personal data abroad is lawful only where one of the conditions set out in the Law exists and an appropriate transfer mechanism (depending on the specific case, an adequacy decision, appropriate safeguards, standard contracts, binding corporate rules, or one of the exceptional circumstances set out in the Law) is applied. As of the publication date of this Disclosure Notice, no standard contract or other completed official transfer mechanism has been executed by BluuB in this regard. BluuB will separately evaluate this matter, and this text will be updated and announced once the necessary mechanism has been completed. Until this process is completed, the transfer abroad occurs only to the minimum extent necessary for the service to be provided. Advertising and device identifiers processed through advertising SDKs (e.g., Google AdMob) may also be transferred abroad within this scope; the principles above also apply to this data.</p>
+<p>The main recipients and processing locations are: Supabase (database, authentication, audio and file storage; servers in Singapore on Amazon Web Services infrastructure), Google (Firebase notifications and crash reporting, AdMob advertising, sign-in with Google and Google Play subscription verification; Google's global infrastructure), Cloudflare (admin panel and network services; global infrastructure), OpenAI (USA; only when the automated profile photo check is enabled) and, on iOS, Apple. On Android, the speech recognition model used for the AI voice is downloaded to the device from alphacephei.com; no audio is sent in this download.</p>
 <h2>17. How Long Is Personal Data Retained?</h2>
 <p>Personal data is retained for as long as required by the relevant processing purpose, taking into account the retention obligations set out in applicable legislation. Retention periods may vary depending on the data category, the purpose of processing, security needs, and legal obligations.</p>
 <p>Personal data for which the retention period has ended or the processing purpose has ceased to exist is, in accordance with applicable legislation:</p>
 <p>deleted, destroyed, or anonymized.</p>
-<p>A detailed Retention and Destruction Policy will be established before BluuB's production release.</p>
-<p>For example, different periods may be determined for different types of data:</p>
-<p>Account data → for as long as the account is active + the required legal period.</p>
+<p>The retention periods applied by data type are as follows:</p>
+<p>Account data → for as long as the account is active; after a deletion request, for the period for withdrawing the deletion request (see Section 18), followed by permanent deletion by the daily clean-up job. Limited records that must be kept by law are excluded.</p>
+<p>Manually taken encrypted database backups → no more than 7 days. Automatic backups of the hosting provider (Supabase) are deleted automatically at the end of the provider's backup cycle.</p>
 <p>Deleted Bottles → removal following the technical deletion/backup period.</p>
 <p>Security records → the limited period required for security and legal requests.</p>
+<p>Provider access logs → Our hosting and network providers (Supabase, Cloudflare) keep access logs, which may include IP addresses, for their own retention periods for the security of the service. BluuB's own application tables do not store raw IP addresses; the authentication service may keep IP addresses in sign-in and session records for session security.</p>
 <p>Complaint/moderation records → the period required by the dispute and security need.</p>
 <p>Guest-session and registration rate-limit events → a target of 48 hours and, in all cases, no more than 72 hours.</p>
 <p>Sign-in attempt rate-limit events → 48 hours (with hourly clean-up).</p>
@@ -251,15 +254,12 @@
 <p>as your rights.</p>
 <p>These rights are set out in the current Article 11 of the KVKK.</p>
 <h2>21. How to Submit a KVKK Application?</h2>
-<p>You may submit your requests under the KVKK to the data controller:</p>
-<p>E-mail: bluubapp@gmail.com</p>
-<p>through this channel.</p>
-<p>In your application;</p>
-<p>your name and surname,</p>
-<p>the subject of the application,</p>
-<p>a clear explanation of the request,</p>
-<p>where necessary, information to verify the application</p>
-<p>may be requested.</p>
+<p>You may submit your requests under the KVKK to the data controller, in Turkish and in accordance with the Communiqué on the Procedures and Principles of Application to the Data Controller, by one of the following means:</p>
+<p>by e-mail to <a href="mailto:bluubapp@gmail.com">bluubapp@gmail.com</a> from the e-mail address registered with BluuB (for accounts opened with Google, the registered address is your Google account's e-mail address; for accounts opened with a username, it is the recovery e-mail address you verified),</p>
+<p>by sending your application signed with a secure electronic signature or mobile signature to <a href="mailto:bluubapp@gmail.com">bluubapp@gmail.com</a>,</p>
+<p>after signing in to the BluuB app, through the Support form in Settings, choosing the "Account issue" category and stating that your request is made under the KVKK.</p>
+<p>Under the Communiqué, the application contains your name, surname and, if made in writing, your signature; for citizens of the Republic of Türkiye, the T.R. identity number, and for foreigners, nationality and passport number or, if any, identity number; the residential or business address for notifications; if any, the e-mail address, telephone or fax number for notifications; and the subject of the request. Please also include your username so that we can find your BluuB account.</p>
+<p>Your application is concluded free of charge as soon as possible according to the nature of the request and at the latest within thirty days. If the process requires an additional cost, a fee may be charged according to the tariff set by the Personal Data Protection Board.</p>
 <p>BluuB may request additional information appropriate and proportionate to the nature of the application in order to verify identity.</p>
 <p>Where the application to the data controller is rejected, found insufficient, or not answered within the period set out in the KVKK, the data subject may lodge a complaint with the Personal Data Protection Board within thirty days from the date on which they become aware of this situation, and, in any event, within sixty days from the date of the application.</p>
 <p>Under Article 13 of the KVKK, applying to the data controller is a precondition for lodging a complaint with the Board; the exceptional circumstances set out in the Law are reserved.</p>
@@ -290,7 +290,7 @@
 <h2>25. Contact</h2>
 <p>Regarding your personal data and this Disclosure Notice:</p>
 <p>Data Controller (natural person): Caner Eser</p>
-<p>E-mail: bluubapp@gmail.com</p>
+<p>E-mail: <a href="mailto:bluubapp@gmail.com">bluubapp@gmail.com</a></p>
 <p>you may contact us through this channel.</p>
 </article>
 </main>
