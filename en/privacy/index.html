@@ -14,7 +14,7 @@
     <a class="lang-switch" href="../../privacy/" lang="tr">Türkçe</a></div>
   <div class="page-title">
     <h1>Privacy Policy</h1>
-    <div class="meta">Last Updated: 11.11.2026</div>
+    <div class="meta">Last Updated: 25.11.2026</div>
   </div>
 </header>
 <main>
@@ -124,6 +124,7 @@
 <h2>9. Usage and Analytics Information</h2>
 <p>The BluuB app does not contain a separate analytics (user behaviour tracking) SDK.</p>
 <p>To run the service, the following usage information is kept on our servers: the start time of your account's fixed 24-hour allowance period (the moment your account was created); listening, Bottle publishing, AI voice generation and AI-voice Bottle sending allowances in these periods and their use; the number of chats started with new people in a period and which people you have already started a chat with (to apply the new-contact limit), the Bottles you listened to and your listening history, listen counts of Bottles, and rewarded-ad viewing and completion records.</p>
+<p>Removing a Bottle from your Listened list only takes it out of your own list; it does not delete the Bottle or its audio recording.</p>
 <p>In the release version of the app and when Firebase is configured, if the app crashes or a serious error occurs, an error report (including technical details such as device model, operating system and app version) is sent automatically through Firebase Crashlytics (Google). No user identifier is added to this report; error messages caught by the app's own layer are shortened before sending and parts that may be personal, such as emails, tokens, links and identifiers, are removed. Crashes in Android's native layer are captured by Crashlytics directly and do not go through this filtering; these reports contain the technical stack trace and device details. There is currently no separate in-app setting to turn this reporting off.</p>
 <h2>10. Advertisements</h2>
 <p>BluuB may use an advertising-supported business model.</p>
@@ -222,7 +223,7 @@
 <p>Such processing will be explained within the scope of this Privacy Policy and the relevant user preference mechanisms.</p>
 <h2>17. Transfer of Data Abroad</h2>
 <p>Some of the technology providers used by BluuB (e.g., Supabase, Google, Apple, OpenAI, Cloudflare) are located abroad; for this reason, your personal data may be processed or stored abroad. The current Article 9 of the KVKK provides that a transfer of data abroad may only be carried out on the basis of an adequacy decision, appropriate safeguards (including a standard contract), or one of the exceptional circumstances listed in the Law. As of the publication date of this Policy, no standard contract or other completed official transfer mechanism has been executed by BluuB in this regard; this matter will be separately evaluated by BluuB, and this Policy will be updated and announced once it has been completed. Until this process is completed, the transfer abroad occurs only to the minimum extent necessary for the service to be provided. Advertising and device identifiers processed through advertising SDKs (e.g., Google AdMob) may also be transferred abroad within this scope; the principles above also apply to this data.</p>
-<p>The main recipients and processing locations are: Supabase (database, authentication, audio and file storage; servers in Singapore on Amazon Web Services infrastructure), Google (Firebase notifications and crash reporting, AdMob advertising, sign-in with Google and Google Play subscription verification; Google's global infrastructure), Cloudflare (admin panel and network services; global infrastructure), OpenAI (USA; only when the automated profile photo check is enabled) and, on iOS, Apple. On Android, the speech recognition model used for the AI voice is downloaded to the device from alphacephei.com; no audio is sent in this download.</p>
+<p>The main recipients and processing locations are: Supabase (database, authentication, audio and file storage; project region Singapore (ap-southeast-1), Amazon Web Services infrastructure), Google (Firebase notifications and crash reporting, AdMob advertising, sign-in with Google and Google Play subscription verification; Google's global infrastructure), Cloudflare (admin panel and network services; global infrastructure), OpenAI (USA; only when the automated profile photo check is enabled) and, on iOS, Apple. On Android, the speech recognition model used for the AI voice is downloaded to the device from alphacephei.com; no audio is sent in this download.</p>
 <h2>18. How Long Is Data Retained?</h2>
 <p>Data is retained only for as long as required by the relevant processing purpose and applicable legal obligations.</p>
 <p>For example;</p>
@@ -230,7 +231,7 @@
 <p>audio recordings for as long as the relevant Bottle exists,</p>
 <p>moderation and security records for the period required for security or legal purposes,</p>
 <p>technical logs for the period required for security and error analysis (for provider access logs, see the explanation below),</p>
-<p>encrypted database and file backups for no more than 7 days,</p>
+<p>manually taken encrypted database backups for no more than 7 days (audio recordings and other files are not included in these backups),</p>
 <p>guest-session and registration rate-limit events for a target period of 48 hours and, in all cases, no more than 72 hours,</p>
 <p>sign-in attempt rate-limit events for 48 hours (with hourly clean-up),</p>
 <p>known device records for 30 days from the last successful sign-in,</p>
@@ -249,13 +250,14 @@
 <p>A deleted Bottle;</p>
 <p>is removed from other users' normal access,</p>
 <p>is removed from the relevant active content lists,</p>
-<p>may be removed from technical backup systems within the determined destruction cycle.</p>
+<p>if its record was included in a manually taken database backup before deletion, it is removed when that backup's retention period of no more than 7 days ends.</p>
 <p>Limited records may need to be retained for a longer period for security or legal necessity.</p>
 <h2>21. Information You Share with Other Users</h2>
 <p>BluuB may offer the ability to use the app without disclosing your real name to other users; however, users may share personal information in their own content.</p>
 <p>BluuB;</p>
 <p>recommends that you not share phone number, home address, national identity number, financial information, or information that could clearly reveal your real identity in a Bottle or messages.</p>
 <p>Information you share with another user may be seen by that user.</p>
+<p>Your Bottles and voice messages can be replayed. A listener can record them with their device's screen or audio recording feature; BluuB cannot technically prevent this. For this reason, do not put information you would not want shared into your voice.</p>
 <p>For this reason, it is important to be careful when communicating with other users.</p>
 <p>It is the User's responsibility not to share personal data belonging to third parties in Bottle or message content without the consent of the person concerned.</p>
 <h2>22. Children's Privacy</h2>
@@ -275,6 +277,7 @@
 <p>security updates</p>
 <p>may include such methods.</p>
 <p>However, it should be remembered that no system operating over the internet can be guaranteed to be one hundred percent secure.</p>
+<p>The BluuB team will not ask you for your password or verification code by message, email or phone. If you receive a message asking for them, do not reply and use the Report feature.</p>
 <h2>24. Your Privacy Preferences</h2>
 <p>Users can manage, on BluuB;</p>
 <p>their push notification preferences,</p>
